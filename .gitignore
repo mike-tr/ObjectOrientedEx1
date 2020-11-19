@@ -1,0 +1,8 @@
+*.rar
+*.zip
+
+graphT01
+*.obj
+out/
+.idea/
+*.iml
