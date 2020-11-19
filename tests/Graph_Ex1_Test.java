@@ -1,3 +1,4 @@
+import ex1.helpers.MyTimer;
 import ex1.src.*;
 
 import java.util.List;
@@ -14,18 +15,18 @@ public class Graph_Ex1_Test {
 
     public static void main(String[] args) {
         //generateWeightData();
-        com.company.MyTimer.Start();
-        com.company.MyTimer.Start(1);
+        MyTimer.Start();
+        MyTimer.Start(1);
         //test1();
         test1();
         System.out.println(g0);
-        com.company.MyTimer.printTimeElapsed("init");
+        MyTimer.printTimeElapsed("init");
         test2();
         System.out.println(g0);
         test3();
         System.out.println(g0);
         //test4(new int[]{1, 424, 523, 140, 338, 299, 798, 9});
-        com.company.MyTimer.printTimeElapsed(1,"total");
+        MyTimer.printTimeElapsed(1,"total");
     }
 
     public static void test1() {
@@ -55,21 +56,21 @@ public class Graph_Ex1_Test {
     }
     public static void test3() {
         ga = new WGraph_Algo(g0);
-        com.company.MyTimer.Start();
+        MyTimer.Start();
         g1 = ga.copy();
-        com.company.MyTimer.printTimeElapsed("copy time ");
+        MyTimer.printTimeElapsed("copy time ");
         ga.init(g1);
         System.out.println(g1);
 
 
-        com.company.MyTimer.Start();
+        MyTimer.Start();
         boolean isConnected = ga.isConnected();
-        long time = com.company.MyTimer.getTimeElapsed();
+        long time = MyTimer.getTimeElapsed();
         System.out.println("Is connected: "+isConnected + " : time - " + time + "ms");
 
-        com.company.MyTimer.Start();
+        MyTimer.Start();
         double dist19 = ga.shortestPathDist(1,9);
-        System.out.println("shortest path: 1,9 dist="+dist19 + " time : " + com.company.MyTimer.getTimeElapsed() + "ms");
+        System.out.println("shortest path: 1,9 dist="+dist19 + " time : " + MyTimer.getTimeElapsed() + "ms");
 
         double dist91 = ga.shortestPathDist(9,1);
         List<node_info> sp = ga.shortestPath(1,9);

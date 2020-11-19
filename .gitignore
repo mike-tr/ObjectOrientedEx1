@@ -6,3 +6,5 @@ graphT01
 out/
 .idea/
 *.iml
+
+Structure.java

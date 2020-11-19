@@ -1,4 +1,4 @@
-package ex1.src;
+package ex1;
 
 import java.io.File;
 
@@ -11,7 +11,7 @@ public class Structure {
 
 	public static void main(String[] a) {
 		String _log = "";
-		String folder_path = System.getProperty("user.dir");
+		String folder_path = System.getProperty("user.dir")+"\\src\\ex1\\";
 		String src_file = folder_path+"src\\";
 		boolean b0 = testFolders(folder_path);
 		boolean b1 =testFiles(src_file);
@@ -21,15 +21,15 @@ public class Structure {
 		else {
 			System.out.println("Ex1 Structure is Wrong!"); }
 	}
-	
+
 	public static boolean testFolders(String folders_path) {
 		boolean ans = true;
 		for (int i = 0; i < _dirs.length; i++) {
-			File src = new File(folders_path+"/"+_dirs[i]);
+			File src = new File(folders_path+_dirs[i]);
 			if (!src.exists()) {
 				ans = false;
 				String str = "ERR: no folder named " + _dirs[i];
-				if(_dirs[i].equals("README.md"))
+				if(_dirs[i].equals("README.txt"))
 					str = "ERR: no file named " + _dirs[i];
 				System.err.println(str);
 				log(str);
@@ -58,7 +58,7 @@ public class Structure {
 		}
 		return ans;
 	}
-	
+
 	private static void log(String s) {
 		_log+=s+"\n";
 	}
