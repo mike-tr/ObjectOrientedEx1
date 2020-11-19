@@ -1,4 +1,4 @@
-import ex1.*;
+import ex1.src.*;
 import org.junit.Test;
 
 import java.util.Arrays;

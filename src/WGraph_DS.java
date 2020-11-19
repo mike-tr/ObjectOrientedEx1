@@ -1,4 +1,4 @@
-package ex1;
+package ex1.src;
 
 public class WGraph_DS extends WGraph_DS4 {
     // nothing in here, this is just a fast way to switch between GRAPHS.

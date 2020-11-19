@@ -1,4 +1,4 @@
-import ex1.*;
+import ex1.src.*;
 
 import java.util.List;
 import java.util.Random;

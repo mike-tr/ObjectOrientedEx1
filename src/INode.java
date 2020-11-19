@@ -1,4 +1,4 @@
-package ex1;
+package ex1.src;
 
 public abstract class INode {
     private int index = -1;

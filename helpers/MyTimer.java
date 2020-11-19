@@ -1,4 +1,4 @@
-package com.company;
+package ex1.helpers;
 
 import java.util.HashMap;
 

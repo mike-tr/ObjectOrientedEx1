@@ -1,4 +1,4 @@
-package ex1;
+package ex1.src;
 
 public class WPathNode extends INode {
     // this is a node object, it implements INode with is an interface
